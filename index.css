@@ -5,30 +5,42 @@
 }
 
 .container{
-    max-width: 1440px;
+  
     margin: 0 auto;
+    border: 2px solid red;
   
 }
+
 /*common code style */
 /* header styles*/
+header{
+    max-width: 1440px;
+     border: 2px solid red;
+     margin: auto;
+    
+}
+
 .nav-title{
     font-weight: 700;
     font-size: 1.5rem;
+   
 }
 nav{
     margin-top: 15px;
     display: flex;
-    justify-content: space-between;
-}
+        justify-content: space-between;}
+   
 ul{
     display: flex;
+    gap: 15px;
 }
 ul > li{
     list-style: none;
-    margin-right: 30px;
+   
     font-weight: 600;
     font-size: 1rem;
     color:#3A3A3A;
+    
 }
 ul > li a{
     text-decoration: none;
@@ -62,12 +74,12 @@ ul > li a{
     height: 100%;
     background-image: url('images/Circle\ design.svg');
     background-repeat: no-repeat;
-    background-size: 476px;
+    background-size: 400px;
     background-position: right;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-top: 50px;
+    margin-top: 30px;
     
  }
  .btn{
@@ -79,27 +91,160 @@ ul > li a{
     cursor: pointer;
     margin-top: 5px;
  }
+ 
 
 /*sponsor section style*/
- .sponsor-img{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+ 
+.sponsor-section{
+    max-width: 80%;
+    margin:  30px auto;
     margin-top: 100px;
-     background-image:linear-gradient(#C0CCDA1A, #C0CCDA99, #C0CCDA1A) ;
-    height: 1px;
-    width: 1110px;
-    background-position: top;
+    display: flex;
+   gap: 20px;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   
+  }
+  /* header style end*/
+
+ 
+ /* card style*/
+ main{
+    max-width: 1440px;
+    margin:  90px  auto;
+ }
+.card-container{
+    margin: auto;
+    width: auto;
+  /*  border: #E02C6D 2px solid;*/
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    gap: 15px;
+   
+    justify-content: center;
+}
+  section > h1{
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #3A3A3A;
+  /*  border: blueviolet 3px solid;*/
+    margin: auto;
+
+}
+.card{
+    height: 480px;
+    width: 300px;
+    padding: 15px;
+   box-shadow: 0px 0px 40px 0px #00000026;
+  background-color: #FFFFFF;
+    
+} 
+ .card-dec{
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #787885;
+    max-width: 200px;
+
+ }
+ .card-price{
+   font-size: 1.25rem;
+   font-weight: 400;
+   font-family: "Inter"
+ }
+ .card-heading{
+    font-weight: 500;
+    color: #18191F;
+   
+    font-size: 1.75rem;
+ }
+
+ 
+.more{
+    text-align: center;
+    color: #E02C6D;
+  padding: 20px;
+   margin-right: -30px;
+ /*border: #E02C6D 4px solid;*/
+ 
+ 
+}
+ /*card style end*/
+  /*join style*/
+ .join{
+    border: 2px solid green;
+    display: flex;
+   gap: 40px;
+    align-items: center;
+    justify-content: center;
+   
   
  }
- 
- 
+ .div1 h1{
+    font-weight: 700;
+    font-size: 2.25rem;
+    color: #0A0826;
+ }
+ .div1 p{
+    color: #6C6C6C;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 20px;
+    max-width: 500px;
+ }
+ .btn1{
+    margin-top: 10px;
+ }
+ /*footer style*/
+ footer{
+ height: 240px;
+ max-width: 1440px;
+ margin: auto;
+ border: violet 2px solid;
+ text-align: center;
+ background-color: #0A0826;
+ color: white;
+  padding: 50px;
+ }
+ .social{
+    color: darkgray;
+ }
+ footer h1 p{
+ color: #D9DBE1;
 
+ }
+ 
+ /*media quay for mobile*/
  @media  screen and (max-width: 576px) {
     nav{
         flex-direction: column;
+        align-items: center;
+       
+    }
+    ul
+      
+    {
+        flex-direction: column;
+        align-items: center;
     }
     .banner-section{
- flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+    .banner-img{
+       background-position: center;
+        width: 100%;
+        justify-content: center;
+    }
+  .banner-heading{
+    margin-top: 15px;
+    width: 100%;
+  }
+    .card-container{
+        grid-template-columns: repeat( 1, 350px);
+        
+    }
+    .join{
+        flex-direction: column;
     }
  }
