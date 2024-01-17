@@ -7,7 +7,7 @@
 .container{
   
     margin: 0 auto;
-    border: 2px solid red;
+  /*  border: 2px solid red;*/
   
 }
 
@@ -15,7 +15,7 @@
 /* header styles*/
 header{
     max-width: 1440px;
-     border: 2px solid red;
+    /* border: 2px solid red;*/
      margin: auto;
     
 }
@@ -173,7 +173,7 @@ ul > li a{
  /*card style end*/
   /*join style*/
  .join{
-    border: 2px solid green;
+  /* border: 2px solid green;*/
     display: flex;
    gap: 40px;
     align-items: center;
@@ -201,7 +201,7 @@ ul > li a{
  height: 240px;
  max-width: 1440px;
  margin: auto;
- border: violet 2px solid;
+/* border: violet 2px solid;*/
  text-align: center;
  background-color: #0A0826;
  color: white;
