@@ -238,7 +238,7 @@ ul > li a{
     }
   .banner-heading{
     margin-top: 15px;
-    width: 100%;
+   width:100%;
   }
     .card-container{
         grid-template-columns: repeat( 1, 350px);
